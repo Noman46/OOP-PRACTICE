@@ -20,4 +20,5 @@ public class Parent {
     public void getM2(){
          m2(); //Procedure of calling privat method.
     }
+    
 }
