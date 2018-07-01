@@ -11,6 +11,15 @@ package noman.practice.isA;
  */
 public class Child extends Parent {
 
+   public void m5(){
+       m1();
+   }
+   
+   public static void m6(){
+       Child c = new Child();
+       c.m1();
+   }
+    
     public static void main(String[] args) {
         Child c = new Child();
         c.m1(); // Output: This is public m1 method
@@ -18,6 +27,9 @@ public class Child extends Parent {
         c.m3();
         // Output: this is static m3 method.
         // Static members can be inherited but can not be overriden.(polymorphism out of scope)
+        c.getM2(); // Procedure of calling privat method.
+        c.m5();
+        c.m6();
     }
 
 }
