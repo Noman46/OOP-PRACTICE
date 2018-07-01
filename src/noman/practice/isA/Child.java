@@ -17,7 +17,8 @@ public class Child extends Parent {
    
    public static void m6(){
        Child c = new Child();
-       c.m1();
+       c.m1(); // m1 is a instance method. so anything from instance to static are, must need object to call them
+       m3(); // m3 is a static method in parent class. so it can be called without any object creation
    }
     
     public static void main(String[] args) {
