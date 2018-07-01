@@ -17,4 +17,7 @@ public class Parent {
     public static void m3(){
         System.out.println("This is static m3 method");
     }
+    public void getM2(){
+         m2(); //Procedure of calling privat method.
+    }
 }
